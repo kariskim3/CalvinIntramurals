@@ -12,28 +12,112 @@
         android:layout_centerHorizontal="true"
         android:id="@+id/textView" />
 
-    <LinearLayout
-        android:orientation="horizontal"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:layout_below="@+id/textView"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="28dp">
+    <ViewFlipper
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/viewFlipper"
+        android:layout_alignTop="@+id/textView"
+        android:layout_alignEnd="@+id/textView">
 
-        <ImageButton
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:id="@+id/volleyball"
-            android:src="@drawable/volleyball"
-            android:contentDescription="@string/volleyball" />
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="fill_parent"
+            android:layout_height="150dp"
+            android:layout_marginTop="44dp"
+            android:id="@+id/LinearLayout1">
 
-        <ImageButton
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:id="@+id/basketball"
-            android:src="@drawable/basketball"
-            android:contentDescription="@string/basketball" />
-    </LinearLayout>
+            <ImageButton
+                android:layout_width="64dp"
+                android:layout_height="64dp"
+                android:layout_margin="15dp"
+                android:id="@+id/volleyball"
+                android:src="@drawable/volleyball"
+                android:contentDescription="@string/volleyball" />
+
+            <ImageButton
+                android:layout_width="64dp"
+                android:layout_height="64dp"
+                android:layout_margin="15dp"
+                android:id="@+id/basketball"
+                android:src="@drawable/basketball"
+                android:contentDescription="@string/basketball" />
+
+            <ImageButton
+                android:layout_width="64dp"
+                android:layout_height="64dp"
+                android:layout_margin="15dp"
+                android:id="@+id/soccer"
+                android:src="@drawable/soccer"
+                android:contentDescription="@string/soccer"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="fill_parent"
+            android:layout_height="150dp"
+            android:layout_marginTop="44dp"
+            android:id="@+id/LinearLayout2">
+
+            <ImageButton
+                android:layout_width="64dp"
+                android:layout_height="64dp"
+                android:layout_margin="15dp"
+                android:id="@+id/soccer2"
+                android:src="@drawable/soccer"
+                android:contentDescription="@string/soccer"/>
+
+            <ImageButton
+                android:layout_width="64dp"
+                android:layout_height="64dp"
+                android:layout_margin="15dp"
+                android:id="@+id/volleyball2"
+                android:src="@drawable/volleyball"
+                android:contentDescription="@string/volleyball" />
+
+            <ImageButton
+                android:layout_width="64dp"
+                android:layout_height="64dp"
+                android:layout_margin="15dp"
+                android:id="@+id/basketball2"
+                android:src="@drawable/basketball"
+                android:contentDescription="@string/basketball" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="fill_parent"
+            android:layout_height="150dp"
+            android:layout_marginTop="44dp"
+            android:id="@+id/LinearLayout3">
+
+            <ImageButton
+                android:layout_width="64dp"
+                android:layout_height="64dp"
+                android:layout_margin="15dp"
+                android:id="@+id/basketball3"
+                android:src="@drawable/basketball"
+                android:contentDescription="@string/basketball" />
+
+            <ImageButton
+                android:layout_width="64dp"
+                android:layout_height="64dp"
+                android:layout_margin="15dp"
+                android:id="@+id/soccer3"
+                android:src="@drawable/soccer"
+                android:contentDescription="@string/soccer"/>
+
+            <ImageButton
+                android:layout_width="64dp"
+                android:layout_height="64dp"
+                android:layout_margin="15dp"
+                android:id="@+id/volleyball3"
+                android:src="@drawable/volleyball"
+                android:contentDescription="@string/volleyball" />
+
+        </LinearLayout>
+    </ViewFlipper>
 
 
 </RelativeLayout>
