@@ -11,7 +11,7 @@
         android:layout_height="wrap_content"
         android:gravity="center_horizontal"
         android:textColor="#FFF"
-        android:text="AAAAAAA"
+        android:text="@string/sport"
         android:layout_gravity="center_horizontal" />
 
     <cs262.calvin.edu.calvinintramurals.MyLinearLayout
