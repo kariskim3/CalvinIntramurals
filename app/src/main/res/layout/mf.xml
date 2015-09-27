@@ -17,7 +17,7 @@
     <cs262.calvin.edu.calvinintramurals.MyLinearLayout
         android:id="@+id/root"
         android:layout_width="match_parent"
-        android:layout_height="84dp"
+        android:layout_height="100dp"
         android:gravity="center"
         android:background="@android:color/transparent">
 

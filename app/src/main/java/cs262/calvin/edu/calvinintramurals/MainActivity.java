@@ -15,12 +15,9 @@ public class MainActivity extends FragmentActivity {
     // more than 1000 times just in order to test your "infinite" ViewPager :D
     public final static int LOOPS = 1000;
     public final static int FIRST_PAGE = PAGES * LOOPS / 2;
-    public final static float BIG_SCALE = 1.0f;
+    public final static float BIG_SCALE = 1.5f;
     public final static float SMALL_SCALE = 0.7f;
     public final static float DIFF_SCALE = BIG_SCALE - SMALL_SCALE;
-
-    private int[] musicCover = { R.drawable.cover1, R.drawable.cover2,
-            R.drawable.cover3, R.drawable.cover4, R.drawable.cover5};
 
     public MyPagerAdapter adapter;
     public ViewPager pager;
@@ -47,9 +44,6 @@ public class MainActivity extends FragmentActivity {
         // Set margin for pages as a negative number, so a part of next and
         // previous pages will be showed
         pager.setPageMargin(-600);
-
-
-
     }
 
     @Override

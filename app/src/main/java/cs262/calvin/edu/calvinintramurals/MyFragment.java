@@ -32,8 +32,8 @@ public class MyFragment extends Fragment {
 
         int pos = this.getArguments().getInt("pos");
         TextView tv = (TextView) l.findViewById(R.id.text);
-
         ImageView iv = (ImageView) l.findViewById(R.id.content);
+
         if (pos == 0) {
             iv.setImageResource(R.drawable.cover3);
             tv.setText("Volleyball");}
