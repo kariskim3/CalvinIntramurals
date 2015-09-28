@@ -5,11 +5,10 @@
     android:paddingTop="@dimen/activity_vertical_margin"
     tools:context=".MainActivity"
     android:id="@+id/RelativeLayout"
-    android:background="#101010">
+    android:background="@android:color/darker_gray">
 
     <TextView android:text="@string/message"
         android:layout_width="wrap_content"
-        android:textColor="#FFF"
         android:gravity="center"
         android:layout_height="wrap_content"
         android:layout_alignParentTop="true"
