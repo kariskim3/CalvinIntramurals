@@ -15,8 +15,8 @@ public class MainActivity extends FragmentActivity {
     // more than 1000 times just in order to test your "infinite" ViewPager :D
     public final static int LOOPS = 1000;
     public final static int FIRST_PAGE = PAGES * LOOPS / 2;
-    public final static float BIG_SCALE = 1.2f;
-    public final static float SMALL_SCALE = 0.6f;
+    public final static float BIG_SCALE = .9f;
+    public final static float SMALL_SCALE = 0.5f;
     public final static float DIFF_SCALE = BIG_SCALE - SMALL_SCALE;
 
     public MyPagerAdapter adapter;
@@ -39,11 +39,11 @@ public class MainActivity extends FragmentActivity {
 
         // Necessary or the pager will only have one extra page to show
         // make this at least however many pages you can see
-        pager.setOffscreenPageLimit(3);
+        pager.setOffscreenPageLimit(5);
 
         // Set margin for pages as a negative number, so a part of next and
         // previous pages will be showed
-        pager.setPageMargin(-600);
+        pager.setPageMargin(-700);
     }
 
     @Override
