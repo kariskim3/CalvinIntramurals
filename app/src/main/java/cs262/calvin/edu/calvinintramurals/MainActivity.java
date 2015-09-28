@@ -15,8 +15,8 @@ public class MainActivity extends FragmentActivity {
     // more than 1000 times just in order to test your "infinite" ViewPager :D
     public final static int LOOPS = 1000;
     public final static int FIRST_PAGE = PAGES * LOOPS / 2;
-    public final static float BIG_SCALE = 1.5f;
-    public final static float SMALL_SCALE = 0.7f;
+    public final static float BIG_SCALE = 1.2f;
+    public final static float SMALL_SCALE = 0.6f;
     public final static float DIFF_SCALE = BIG_SCALE - SMALL_SCALE;
 
     public MyPagerAdapter adapter;

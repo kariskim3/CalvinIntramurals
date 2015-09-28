@@ -5,7 +5,7 @@ import android.support.v4.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.ImageView;
+import android.widget.ImageButton;
 import android.widget.LinearLayout;
 import android.widget.TextView;
 
@@ -32,22 +32,22 @@ public class MyFragment extends Fragment {
 
         int pos = this.getArguments().getInt("pos");
         TextView tv = (TextView) l.findViewById(R.id.text);
-        ImageView iv = (ImageView) l.findViewById(R.id.content);
+        ImageButton ib = (ImageButton) l.findViewById(R.id.content);
 
         if (pos == 0) {
-            iv.setImageResource(R.drawable.cover3);
+            ib.setImageResource(R.drawable.sport3);
             tv.setText("Volleyball");}
         else if (pos == 1) {
-            iv.setImageResource(R.drawable.cover4);
+            ib.setImageResource(R.drawable.sport4);
             tv.setText("Ping Pong");}
         else if (pos == 2) {
-            iv.setImageResource(R.drawable.cover5);
+            ib.setImageResource(R.drawable.sport5);
             tv.setText("Football");}
         else if (pos == 3) {
-            iv.setImageResource(R.drawable.cover1);
+            ib.setImageResource(R.drawable.sport1);
             tv.setText("Soccer");}
         else if (pos == 4) {
-            iv.setImageResource(R.drawable.cover2);
+            ib.setImageResource(R.drawable.sport2);
         tv.setText("BasketBall");}
 
         MyLinearLayout root = (MyLinearLayout) l.findViewById(R.id.root);
