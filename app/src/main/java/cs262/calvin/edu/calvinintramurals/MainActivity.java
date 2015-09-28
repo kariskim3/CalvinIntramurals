@@ -1,49 +1,19 @@
 package cs262.calvin.edu.calvinintramurals;
 
+import android.app.Activity;
 import android.app.SearchManager;
 import android.content.Intent;
 import android.os.Bundle;
 import android.provider.Settings;
-import android.support.v4.app.FragmentActivity;
-import android.support.v4.view.ViewPager;
 import android.view.Menu;
 import android.view.MenuItem;
 
-public class MainActivity extends FragmentActivity {
-    public final static int PAGES = 5;
-    // You can choose a bigger number for LOOPS, but you know, nobody will fling
-    // more than 1000 times just in order to test your "infinite" ViewPager :D
-    public final static int LOOPS = 1000;
-    public final static int FIRST_PAGE = PAGES * LOOPS / 2;
-    public final static float BIG_SCALE = .9f;
-    public final static float SMALL_SCALE = 0.5f;
-    public final static float DIFF_SCALE = BIG_SCALE - SMALL_SCALE;
+public class MainActivity extends Activity {
 
-    public MyPagerAdapter adapter;
-    public ViewPager pager;
-
-    public void onCreate(Bundle savedInstanceState) {
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-
-        pager = (ViewPager) findViewById(R.id.myviewpager);
-
-        adapter = new MyPagerAdapter(this, this.getSupportFragmentManager());
-        pager.setAdapter(adapter);
-        pager.setOnPageChangeListener(adapter);
-
-
-        // Set current item to the middle page so we can fling to both
-        // directions left and right
-        pager.setCurrentItem(FIRST_PAGE);
-
-        // Necessary or the pager will only have one extra page to show
-        // make this at least however many pages you can see
-        pager.setOffscreenPageLimit(5);
-
-        // Set margin for pages as a negative number, so a part of next and
-        // previous pages will be showed
-        pager.setPageMargin(-700);
     }
 
     @Override
@@ -67,7 +37,7 @@ public class MainActivity extends FragmentActivity {
                 return super.onOptionsItemSelected(item);
         }
     }
-    // Had to add these definitions
+
     private void openSearch(){
         startActivity(new Intent(SearchManager.INTENT_ACTION_GLOBAL_SEARCH));
     }
